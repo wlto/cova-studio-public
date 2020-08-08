@@ -2,9 +2,9 @@
 
 ## Notes
 
-This is the public version of Cova Studio, which does not include GSAP's member plugins. Hence, if you want to run the code, you need to download [GSAP's member plugin tarball](https://greensock.com/docs/v3/Installation?checked=core,cssRule,scrollTrigger) with the appropriate plugins that were used in this project.
+This is the public version of Cova Studio, which does not include GSAP's member plugins for licensing reasons. Hence, if you want to run the code, you need to download [GSAP's member plugin tarball](https://greensock.com/docs/v3/Installation?checked=core,cssRule,scrollTrigger) with the appropriate plugins that were used in this project.
 
-# [Demo](https://5f2ee69e274f710007af4fbf--clever-euler-1e2307.netlify.app/)
+# [Demo](https://clever-euler-1e2307.netlify.app/)
 
 ## Concept & Work
 
@@ -16,7 +16,7 @@ Cova Studio has had many clients throughout the years with staffs over 12 years 
 
 This project is part of many projects which I, William, is building as part of my portfolio. Hence, I am speed designing which means it does not include any wireframe or user story. It is mostly for quickly prototyping and testing out interface ideas that I have had in my mind for a while.
 
-The design files can be found [here]().
+The design files can be found [here](./design/cova-studio.studio).
 
 ## Development
 
