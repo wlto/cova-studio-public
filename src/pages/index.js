@@ -1,22 +1,42 @@
 import React from "react"
-import { Link } from "gatsby"
+import ReactFullpage from "@fullpage/react-fullpage"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import "./index.scss"
+import { AppContextProvider } from "../contexts/AppContext"
+
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+
+import Hero from "../sections/Hero"
+import YourStory from "../sections/YourStory"
+import YourFuture from "../sections/YourFuture"
+import TellUs from "../sections/TellUs"
+
+import "../animations/easings"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <AppContextProvider>
+    <Layout>
+      <SEO title="Home" />
+      <ReactFullpage
+        licenseKey={process.env.GASTBY_APP_FULLPAGE_LICENSE}
+        navigation
+        scrollBar={true}
+        scrollingSpeed={1000}
+        normalScrollElements={`.Menu, #TellUs-story`}
+        render={({ state, fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <Hero />
+              <YourStory />
+              <YourFuture />
+              <TellUs />
+            </ReactFullpage.Wrapper>
+          );
+        }}
+      />
+    </Layout>
+  </AppContextProvider>
 )
 
 export default IndexPage

@@ -1,0 +1,24 @@
+.ThankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    color: #5EC8E5;
+  }
+  
+  p {
+    margin-top: pxToRem(56);
+    font-weight: 500;
+    opacity: 0.3;
+    transition: opacity 250ms ease-in-out;
+
+    a {
+      color: #235BA8;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

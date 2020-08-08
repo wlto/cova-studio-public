@@ -1,0 +1,74 @@
+.Menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 500;
+
+  .Menu--overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    background-color: $white;
+    z-index: 400;
+  }
+
+  .Menu--content {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 450;
+  }
+
+  .Navigation {
+    ul li {
+      display: block;
+      margin-bottom: pxToRem(52);
+      margin-left: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: inline-block;
+        font-size: pxToRem(48);
+        font-weight: 600;
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .Contacts {
+    text-align: right;
+
+    .Contacts--email {
+      margin-bottom: pxToRem(20);
+    }
+    .Socials {
+      margin-bottom: pxToRem(26);
+    }
+    .Copyright {
+      margin-bottom: pxToRem(14);
+      font-size: pxToRem(14);
+      font-weight: 500;
+    }
+
+    .Contacts--email {
+      transform-origin: right;
+      transform: rotate(90deg);
+      padding-top: 1.2rem;
+      font-size: pxToRem(14);
+      font-weight: 500;
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}

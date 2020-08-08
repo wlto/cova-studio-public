@@ -1,0 +1,11 @@
+.Socials {
+  list-style-type: none;
+  .Socials-icon {
+    display: inline-block;
+    margin-left: pxToRem(28);
+    svg {
+      width: pxToRem(22);
+      height: pxToRem(22);
+    }
+  }
+}

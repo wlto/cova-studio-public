@@ -1,0 +1,19 @@
+html {
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Layout {
+  
+  .Header {
+    position: fixed;
+    z-index: 1000;
+  }
+}
